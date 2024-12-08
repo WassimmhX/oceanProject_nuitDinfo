@@ -1,0 +1,20 @@
+
+<div id="zenitease" class="main-container" [style]="showLandingPage ? 'display: none;': ''">
+  <p-toast [life]="10000"  />
+  <app-nav-bar style="position: fixed;top: 0;z-index: 200;" (newItemEvent)="showLogin()"></app-nav-bar>
+  <div class="landing-page" style="background-color: #e3eaea;">
+    <div class="second-container">
+      <app-introduction></app-introduction>
+      <div class="image-container">
+        <img class="bank-card-img" src="assets/images/wave.png">
+        <img class="app-screen-shot" src="assets/images/corps.webp">
+      </div>
+      <app-functionalities id="fonctionnalités" style="margin-top: 50px;"></app-functionalities>
+      <app-cir id="avantages"></app-cir>
+      <app-salinite id="tarification"></app-salinite>
+      <app-bones id="entreprise"></app-bones>
+     
+    </div>
+  </div>
+
+</div>

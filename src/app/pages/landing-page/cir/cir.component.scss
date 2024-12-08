@@ -1,0 +1,151 @@
+.cirs-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.cir-row{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+}
+.cirs-content{
+}
+.cirs-header{
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.cirs-title{
+  color: #38abf8;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.description{
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.key-cirs{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #02016f;
+  //margin-bottom: 0.5rem;
+}
+.cirs{
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+.cir-cards{
+  display:flex;
+  flex-direction: row;
+  margin: 3rem 0;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.cir-card{
+  background-color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+  width : 150px;
+  padding: 1rem;
+  color: #02016f;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
+  transition:0.3s;
+}
+.cir-card-selected{
+  cursor: pointer;
+  background-color: #38abf8;
+  color: white;
+  border-radius: 1rem;
+  width : 150px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.cir-card:hover{
+  background-color: #38abf8;
+  color: white;
+  transform: scale(0.9);
+}
+.cir-card:hover i.cir-icon{
+  color: white;
+}
+.cir-icon{
+  font-size: 3rem;
+  color: #38abf8;
+}
+.cir-icon-selected{
+  font-size: 3rem;
+  color: white;
+}
+.cir-icon-decision{
+  margin-top: -10px;
+  margin-bottom: 10px;
+  height:4.5rem;
+  width:4.5rem;
+}
+.cir-description{
+  //border: 2px solid #d8f2f5;
+  //border-radius:1rem;
+  //padding: 10px;
+  //height: 130px;
+  //box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.cir-title{
+  color: #02016f;
+  font-weight: bold;
+}
+.image-container {
+  margin: 0 0 0 30px;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+
+.image-container img {
+  object-fit: cover;
+  height: 35rem;
+  width: 30rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+}
+
+@media screen and (max-width:450px) {
+  .key-cirs{
+    font-size: 1.8rem;
+  }
+  .cirs-container{
+    display: unset;
+  }
+  .cir-cards{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cir-cards .cir-card{
+    flex: 0 0 40%;
+    margin: 0.8rem;
+  }
+  .cir-cards .cir-card-selected{
+    flex: 0 0 40%;
+    margin: 0.8rem;
+  }
+  .image-container{
+    display: none;
+  }
+  .cirs-header{
+    margin: 0 25px;
+  }
+  .description{
+    margin-left: 25px;
+  }
+  .cir-description{
+    margin-left: 25px;
+    padding-right: 25px;
+  }
+}
